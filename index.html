@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITHISH T - Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .profile-header, .company-info, .post, .thesis-section {
+            display: none; /* Hide content initially */
+        }
+        .profile-header, .profile-info {
+            display: block; /* Show profile page initially */
+        }
+        .profile-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+        .profile-header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #333;
+        }
+        .profile-info {
+            margin-top: 20px;
+        }
+        .profile-info h3 {
+            margin-top: 0;
+            color: #4CAF50; /* Green */
+        }
+        .profile-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #e0f7fa; /* Light Cyan */
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.7); /* Transparent Dark Gray */
+            color: white;
+            text-align: center;
+            padding: 5px 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 0.9em; /* Smaller font size */
+            border-top: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Add subtle border */
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .next-page-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .next-page-btn:hover {
+            background-color: #45a049;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NITHISH T - Profile</h1>
+</header>
+
+<div class="container">
+    <!-- Profile Page (initially visible) -->
+    <div class="profile-header">
+        <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture">
+        <h1>NITHISH T</h1>
+    </div>
+
+    <div class="profile-info">
+        <h3>About Me</h3>
+        <p>Hello! I'm Nithish T, a web enthusiast with a passion for coding and technology. I enjoy creating websites, learning new programming languages, and solving problems. In my free time, I love reading tech blogs, experimenting with code, and exploring the outdoors.</p>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Web Development</li>
+            <li>Responsive Design</li>
+            <li>Problem Solving</li>
+        </ul>
+
+        <h3>Contact</h3>
+        <p>Email: your-email@example.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
+    </div>
+
+    <!-- Next Page Button -->
+    <button class="next-page-btn" onclick="showCompanyDetails()">Next Page</button>
+</div>
+
+<!-- Company Details Page (hidden initially) -->
+<div class="container company-info">
+    <h2>About the Company</h2>
+    <p>XYZ Technologies is a leading innovator in the tech industry, specializing in the development of advanced AI and machine learning solutions. Founded in 2010, the company has rapidly expanded its influence and is recognized globally for its cutting-edge research and products. With a team of talented engineers and scientists, XYZ Technologies continues to drive technological advancements in areas such as automation, smart devices, and data analytics.</p>
+    <p>Mission: To empower businesses with AI-driven solutions that enhance efficiency, productivity, and customer satisfaction. Vision: To revolutionize industries through technological innovation, making the world a smarter, more connected place.</p>
+
+    <div class="post">
+        <h3>Latest Post: The Future of Artificial Intelligence in Healthcare</h3>
+        <p>The healthcare industry is undergoing a massive transformation thanks to artificial intelligence. From predictive analytics to personalized treatment plans, AI is changing the way we approach medicine. Doctors and healthcare providers are now able to leverage AI tools to diagnose diseases faster, improve patient care, and reduce costs. The future of AI in healthcare looks incredibly promising, and XYZ Technologies is leading the charge in developing solutions that will shape the future of medicine.</p>
+    </div>
+
+    <div class="thesis-section">
+        <h3>Random Thesis: "The Role of AI in Enhancing Human Cognition"</h3>
+        <p>This thesis explores the intersection of artificial intelligence and human cognition, focusing on how AI systems can complement human brain functions and improve decision-making, memory retention, and problem-solving. The paper discusses the development of cognitive AI models, their potential applications in neuroscience, and the ethical implications of enhancing human intelligence through technology. The thesis also examines the role of AI in educational settings, specifically in personalized learning, and how AI can optimize the way humans acquire and retain knowledge.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 NITHISH T. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function showCompanyDetails() {
+        // Hide Profile page
+        document.querySelector('.profile-header').style.display = 'none';
+        document.querySelector('.profile-info').style.display = 'none';
+        
+        // Show Company Details page
+        document.querySelector('.company-info').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
